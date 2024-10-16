@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+/* General styling */
+/* Reset basic margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Smooth scrolling CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #f0f8ff;
   min-height: 100vh;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f4f8; /* Optional: Background color for the section */
+}
+
+.hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start; /* Aligns content to the top */
+  text-align: left; /* Adjusts alignment of text */
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content h2 {
+  margin-top: -20px;  /* Move the "Hello" text upwards */
+  font-size: 24px;    /* Adjust the font size */
+  color: #333;        /* Text color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-content h1 {
+  font-size: 48px;    /* Adjust font size for your name */
+  margin: 10px 0;     /* Space between the name and other content */
+  color: #111;        /* Text color */
+}
+
+.hero-content p.title {
+  font-size: 18px;    /* Adjust the font size of the paragraph */
+  color: #555;        /* Text color */
+  margin-top: 10px;   /* Space above the paragraph */
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* CSS for the hero image */
+.hero-image img {
+  width: 400px;         /* Set the width to 200px to make it smaller */
+  height: 500px;         /* Maintain aspect ratio */
+  border-radius: 50%;   /* Keep the circular shape */
+  object-fit: cover;    /* Ensure the image covers the area evenly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add a slight shadow for a more polished look */
+  margin: 20px;         /* Add some spacing around the image */
+}
+
+
+/* About and Projects Section Styling */
+.section-about, .section-projects {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.section-about {
+  background-color: #e6f7ff;
+}
+
+.section-projects {
+  background-color: #e0e0e0;
+}
+/* Container holding the About and Projects sections */
+.sections-container {
+  display: flex;          /* Use Flexbox to align sections horizontally */
+  justify-content: space-between;  /* Space between the sections */
+  align-items: stretch;   /* Stretch both sections to take equal height */
+  height: 100vh;          /* Full viewport height */
+}
+
+/* About section styling */
+.section-about {
+  flex: 1;                /* Flex-grow: take up equal space */
+  padding: 20px;
+  background-color: #f0f0f0;  /* Light background color for About */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+}
+
+/* Projects section styling */
+.section-projects {
+  flex: 1;                
+  padding: 20px;
+  background-color: #e0e0e0;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
 }
