@@ -50,3 +50,26 @@
 .nav-links a:hover {
   color: #007bff;
 }
+.section-about {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+.section-about h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-professional-summary,
+.about-core-skills,
+.about-achievements {
+  margin-bottom: 20px;
+}
+
+.about-core-skills ul,
+.about-achievements ul {
+  list-style: none; /* Removes the default disc bullets */
+  padding-left: 0; /* Aligns the text to the left, removing indentation */
+}
