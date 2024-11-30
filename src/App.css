@@ -10,7 +10,7 @@
 }
 
 .hero-image img {
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 50%;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .section-about h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 10px;
 }
@@ -73,3 +73,43 @@
   list-style: none; /* Removes the default disc bullets */
   padding-left: 0; /* Aligns the text to the left, removing indentation */
 }
+.section-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about-core-skills, .about-achievements {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-core-skills h2, .about-achievements h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.about-core-skills ul, .about-achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-core-skills ul li, .about-achievements ul li {
+  margin-bottom: 10px;
+}
+
+
+
